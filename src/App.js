@@ -1,10 +1,10 @@
 import './App.css';
-import {Button} from 'antd';
+import EvaluateSection from './components/evaluateSection';
 
 function App() {
   return (
     <div className="App">
-        <Button type="primary">Primary Button</Button>
+      <EvaluateSection />
     </div>
   );
 }
