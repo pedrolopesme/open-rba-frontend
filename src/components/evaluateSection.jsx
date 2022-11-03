@@ -1,12 +1,18 @@
 import {React} from 'react';
 import {Layout, Col, Row} from 'antd';
 import EvaluateForm from './evaluateForm';
+import {evaluate} from '../services/rbaService';
 
 const EvaluateSection = () => {
     const {Content} = Layout;
 
-    const handleFormSubmit = (context) => {
+    const handleFormSubmit = ({context}) => {
         console.log('Handling form submission for', context);
+        evaluate(JSON.parse(context)).then(onRefresh());
+    }
+
+    const onRefresh = () => {
+        console.log("refreshing")
     }
 
     return(
