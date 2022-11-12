@@ -23,7 +23,7 @@ const EvaluateForm = ({onFormSubmit}) => {
         form={form}
         onFinish={onFormSubmit}
         initialValues={{
-            ['context']:initialContext,
+            'context':initialContext,
         }}>
             <Row gutter={20}>
                 <Col xs={24} sm={24} md={17} lg={19} xl={20}>

@@ -1,18 +1,19 @@
-import {React} from 'react';
-import {Layout, Col, Row} from 'antd';
+import {React, useState} from 'react';
+import {Layout, Col, Row, message} from 'antd';
 import EvaluateForm from './evaluateForm';
 import {evaluate} from '../services/rbaService';
+import EvaluationResult from './evaluationResult';
 
 const EvaluateSection = () => {
     const {Content} = Layout;
+    const [evaluation, setEvaluation] = useState([]);
 
     const handleFormSubmit = ({context}) => {
         console.log('Handling form submission for', context);
-        evaluate(JSON.parse(context)).then(onRefresh());
-    }
-
-    const onRefresh = () => {
-        console.log("refreshing")
+        evaluate(JSON.parse(context)).then(json => {
+            setEvaluation(json);
+            message.success("Context risk evaluated")
+        });
     }
 
     return(
@@ -22,6 +23,11 @@ const EvaluateSection = () => {
                     <Col span={14} offset={5}>
                         <h1> Risk Based Authentication Evaluation </h1>
                         <EvaluateForm onFormSubmit={handleFormSubmit} />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col span={14} offset={5}>
+                        <EvaluationResult evaluation={evaluation} />
                     </Col>
                 </Row>
             </Content>
