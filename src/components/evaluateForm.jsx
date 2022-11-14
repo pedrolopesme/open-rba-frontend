@@ -1,5 +1,5 @@
 import {React} from 'react';
-import {Form, Row, Col, Input, Button} from 'antd';
+import {Form, Input, Button} from 'antd';
 import {RightCircleOutlined} from '@ant-design/icons';
 
 const EvaluateForm = ({onFormSubmit}) => {
@@ -25,21 +25,16 @@ const EvaluateForm = ({onFormSubmit}) => {
         initialValues={{
             'context':initialContext,
         }}>
-            <Row gutter={20}>
-                <Col xs={24} sm={24} md={17} lg={19} xl={20}>
-                    <Form.Item 
-                        name={'context'}
-                        rules={[{required: true, message:'This field is required'}]}>
-                            <TextArea placeholder='User Context' rows={12}/>
-                    </Form.Item>
-                </Col>
-                <Col xs={24} sm={24} md={7} lg={5} xl={4}>
-                    <Button type="primary" htmlType='submit' block>
-                        Evaluate
-                        <RightCircleOutlined />
-                    </Button>
-                </Col>
-            </Row>
+                <Form.Item 
+                    name={'context'}
+                    rules={[{required: true, message:'This field is required'}]}>
+                        <TextArea placeholder='User Context' rows={12}/>
+                </Form.Item>
+
+                <Button type="primary" htmlType='submit' block>
+                    Evaluate
+                    <RightCircleOutlined />
+                </Button>
     </Form>);
 }
 

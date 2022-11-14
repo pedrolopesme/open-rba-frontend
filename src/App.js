@@ -4,15 +4,17 @@ import { Layout } from 'antd';
 import logo from './logo.svg'
 
 function App() {
-  const { Header, Footer, Sider, Content } = Layout;
+  const { Header, Content } = Layout;
 
   return (
     <Layout className="App">
-      <Header>
+      <Header style={{ textAlign: 'center' }}>
         <img src={logo} alt="Risk Based Authentication" style={{width:'300px'}} />
       </Header>
-      <Layout style={{ padding: '0 50px' }}>
+      <Layout>
+        <Content className="site-layout" style={{ padding: '50px', marginTop: 64 }}>
           <EvaluateSection />
+        </Content>
       </Layout>
     </Layout>
   );

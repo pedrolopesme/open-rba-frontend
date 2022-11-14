@@ -1,1 +1,11 @@
 @import '~antd/dist/antd.css';
+
+
+.evaluationCard{
+    width: 100%;
+    /* max-width: 250px; */
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+

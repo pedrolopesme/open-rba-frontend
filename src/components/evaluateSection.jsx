@@ -12,26 +12,21 @@ const EvaluateSection = () => {
         console.log('Handling form submission for', context);
         evaluate(JSON.parse(context)).then(json => {
             setEvaluation(json);
-            message.success("Context risk evaluated")
+            message.success("Context risk evaluated");
         });
     }
 
     return(
-        <Layout className='layout'>
-            <Content>
-                <Row>
-                    <Col span={14} offset={5}>
-
-                        <EvaluateForm onFormSubmit={handleFormSubmit} />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col span={14} offset={5}>
-                        <EvaluationResult evaluation={evaluation} />
-                    </Col>
-                </Row>
-            </Content>
-        </Layout>
+        <Content>
+            <Row>
+                <Col span={14}>
+                    <EvaluateForm onFormSubmit={handleFormSubmit} />
+                </Col>
+                <Col span={8}>
+                    <EvaluationResult evaluation={evaluation} />
+                </Col>
+            </Row>
+        </Content>
     );
 }
 
