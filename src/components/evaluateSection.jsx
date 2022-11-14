@@ -21,7 +21,7 @@ const EvaluateSection = () => {
             <Content>
                 <Row>
                     <Col span={14} offset={5}>
-                        <h1> Risk Based Authentication Evaluation </h1>
+
                         <EvaluateForm onFormSubmit={handleFormSubmit} />
                     </Col>
                 </Row>
