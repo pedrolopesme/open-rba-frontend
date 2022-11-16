@@ -1,7 +1,7 @@
 import './App.css';
 import EvaluateSection from './components/evaluateSection';
 import { Layout } from 'antd';
-import logo from './logo.svg'
+import logo from './assets/img/logo.svg'
 
 function App() {
   const { Header, Content } = Layout;

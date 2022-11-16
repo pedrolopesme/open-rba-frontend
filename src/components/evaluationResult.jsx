@@ -1,5 +1,6 @@
 import {React} from 'react';
 import { Card } from 'antd';
+import RiskLow from '../assets/img/risk_low.svg'
 
 const EvaluationResult = ({evaluation}) => {
     const { Meta } = Card;
@@ -23,7 +24,7 @@ const EvaluationResult = ({evaluation}) => {
         return (
             <div className='evaluationCard'>
                 <Card style={{margin: '0 auto'}}
-                    cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}>
+                    cover={<img alt="example" src={RiskLow} />}>
                     <Meta title={translateClassification(evaluation)} description={translateScore()} />
                 </Card> 
             </div>
