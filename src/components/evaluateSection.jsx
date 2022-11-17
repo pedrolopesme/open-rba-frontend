@@ -17,12 +17,12 @@ const EvaluateSection = () => {
     }
 
     return(
-        <Content>
-            <Row>
-                <Col span={14}>
+        <Content >
+            <Row justify="center">
+                <Col span={12}>
                     <EvaluateForm onFormSubmit={handleFormSubmit} />
                 </Col>
-                <Col span={8}>
+                <Col span={3} offset={1}>
                     <EvaluationResult evaluation={evaluation} />
                 </Col>
             </Row>

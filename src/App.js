@@ -12,7 +12,7 @@ function App() {
         <img src={logo} alt="Risk Based Authentication" style={{width:'300px'}} />
       </Header>
       <Layout>
-        <Content className="site-layout" style={{ padding: '50px', marginTop: 64 }}>
+        <Content className="site-layout" style={{ paddingBottom: '30px', marginTop: '30px' }}>
           <EvaluateSection />
         </Content>
       </Layout>
