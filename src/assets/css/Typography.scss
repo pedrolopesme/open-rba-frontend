@@ -1,0 +1,81 @@
+/**
+*  Stylesheet to centralize all default typography
+*/
+  
+$text-default-font: "Lato", sans-serif;
+$text-default-font-weight: 400;
+$text-default-font-size: 1.6rem;
+$text-default-line-height: 1.7;
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: $color-text-dark;
+  padding: .5rem 0;
+  line-height: 5.7rem;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: $color-text-dark;
+  padding: .5rem 0;
+  margin-bottom: 1rem; }
+
+h3 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: $color-text-dark;
+  padding: 1rem 0;
+  margin-bottom: 1rem; 
+}
+
+h4 {
+  font-size: 3.2rem;
+  font-weight: 300;
+  color: $color-text-dark;
+  padding: 1rem 0;
+  margin-bottom: 1rem; }
+
+h5 {
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: $color-text-dark;
+  padding: 1rem 0;
+  margin-bottom: 1rem; }
+
+h6 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: $color-text-dark;
+  padding: 1rem 0;
+  margin-bottom: 1rem; }
+
+p {
+  letter-spacing: .1vh;
+  line-height: 3rem;
+  margin-bottom: 2rem; }
+
+input {
+  color: $color-text;}
+
+ul {
+  list-style-type: none;}
+
+a {
+  img {
+    height: 100%;
+    vertical-align: middle;
+    margin: 0 .5rem;
+  }
+
+  &.alt {
+    color: $color-primary;
+    text-decoration: none;
+  }
+
+  &.accent {
+    color: $color-accent;
+    text-decoration: none;
+  }
+}

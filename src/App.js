@@ -1,4 +1,4 @@
-import './App.css';
+import './assets/css/App.scss';
 import EvaluateSection from './components/evaluateSection';
 import { Layout } from 'antd';
 import logo from './assets/img/logo.svg'

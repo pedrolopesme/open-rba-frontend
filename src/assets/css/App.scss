@@ -1,0 +1,34 @@
+@import '~antd/dist/antd.css';
+@import "theme";
+@import "typography";
+
+.evaluationCard{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; /* The base size for all rem sizes. 100% means we are respecting the default browser font size (16px) */
+    box-sizing: border-box; /* remove margin and padding to boxes size calculation */
+    height: 100%;
+}
+
+body {
+    font-family: $text-default-font;
+    font-weight:  $text-default-font-weight;
+    font-size:  $text-default-font-size;
+    line-height: $text-default-line-height;
+    color: $color-text;
+    background-color: $color-main-bg;
+
+}
