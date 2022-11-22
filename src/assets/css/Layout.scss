@@ -4,5 +4,7 @@
 
 .main_header {
     background-color: $color-primary-dark;
-    background-image: url(../img/line.svg) repeat-x center center;
+    background-image: url(../img/line.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }   
