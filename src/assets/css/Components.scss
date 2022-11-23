@@ -1,0 +1,9 @@
+/**
+*  Stylesheet to define styles for specific components. (eg. EvaluationCard, Form,etc)
+*/
+
+#evaluationForm {
+    border-radius: $border-rounded-size;
+    padding: 30px;
+    background-color: $color-elements-bg;
+}
